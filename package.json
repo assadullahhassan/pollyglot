@@ -1,0 +1,20 @@
+{
+  "name": "pollyglot",
+  "description": "https://scrimba.com/fullstack-path-c0fullstack/~0xrr",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.1",
+    "express": "^5.2.1",
+    "marked": "^18.0.2",
+    "openai": "^6.34.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.9",
+    "concurrently": "^8.2.2"
+  }
+}
