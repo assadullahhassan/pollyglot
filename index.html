@@ -2,6 +2,7 @@
 <html>
     <head>
          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,37 +17,45 @@
             <section>
                 <form id="translation-form" action="">
                 <label for="text">Text to Translate 👇</label>
-                <textarea id="text" name="text" ></textarea>
+                <textarea id="text" name="text" maxlength="271"></textarea>
                 <br>
-                <label for="target-language">Target Language:</label>
-                <!-- <select id="target-language" name="target-language">
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                    <option value="it">Italian</option>
-                </select> -->
-                <div class="radio">
-                    <div>
-                        <input type="radio" id="french" name="fav_color" value="french">
-                        <label for="french">French </label><img src="./assets/france.png" width="20" height="20" alt="French Flag" >
+
+                <div id="main-sub">
+                    <label for="target-language">Select language</label>
+                    <!-- <select id="target-language" name="target-language">
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                    </select> -->
+                    <div class="radio">
+                        <div>
+                            <input type="radio" id="french" name="target-language" value="french" checked>
+                            <label for="french">French </label><img src="./assets/france.png" width="20" height="20" alt="French Flag" >
+                        </div>
+                        <div>
+                            <input type="radio" id="spanish" name="target-language" value="spanish">
+                            <label for="spanish">Spanish <img src="./assets/spain.png" width="20" height="20" alt="Spanish Flag" ></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="german" name="target-language" value="german">
+                            <label for="german">German <img src="./assets/german.png" width="20" height="20" alt="German Flag" ></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="japanese" name="target-language" value="japanese">
+                            <label for="japanese">Japanese <img src="./assets/japan.png" width="20" height="20" alt="Japanese Flag" ></label>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <input type="radio" id="spanish" name="fav_color" value="spanish">
-                        <label for="spanish">Spanish <img src="./assets/spain.png" width="20" height="20" alt="Spanish Flag" ></label>
-                    </div>
-                    <div>
-                        <input type="radio" id="german" name="fav_color" value="german">
-                        <label for="german">German <img src="./assets/german.png" width="20" height="20" alt="German Flag" ></label>
-                    </div>
-                    <div>
-                        <input type="radio" id="japanese" name="fav_color" value="japanese">
-                        <label for="japanese">Japanese <img src="./assets/japan.png" width="20" height="20" alt="Japanese Flag" ></label>
-                    </div>
-                    
                 </div>
-                
-                <br>
-                <button type="submit">Translate</button>
+                <div id="output-div" class="output-div">
+                    <label for="output">Translated Text 👇</label>
+                    <div id="output-content" class="output-content"></div>
+                    <!-- <textarea id="output" name="output" readonly></textarea> -->
+                </div>
+                <div id="btn-div">
+                    <button type="button" id="translate-btn">Translate</button>
+                </div>
             </form>
             </section>
             
