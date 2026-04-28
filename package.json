@@ -1,9 +1,10 @@
 {
   "name": "pollyglot",
-  "description": "https://scrimba.com/fullstack-path-c0fullstack/~0xrr",
+  "description": "AI translation app",
   "type": "module",
+  "main": "server.js",
   "scripts": {
-    "start": "vite",
+    "start": "node server",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
