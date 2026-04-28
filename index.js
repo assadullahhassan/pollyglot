@@ -20,7 +20,7 @@ input.addEventListener("input", () => {
 translateBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   const text = input.value;
-  console.log("Input text:", text);
+  // console.log("Input text:", text);
   const targetLanguage = document.querySelector('input[name="target-language"]:checked').value;
     mainSub.style.display = "none";
     outputDiv.style.display = "block";
@@ -31,7 +31,7 @@ translateBtn.addEventListener("click", async (e) => {
         <button type="btn" onclick="location.reload()">Start Over</button>
     `;
     try {
-    const response = await fetch("http://localhost:3000/translate", {
+    const response = await fetch("https://pollyglot-svyl.onrender.com/translate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

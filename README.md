@@ -16,7 +16,7 @@ PollyGlot is a web-based translation application that leverages Artificial Intel
 ## 📸 Screenshots and Demo
 
 
-[Project link demo](https://assadullahhassan.github.io/)
+[Project link demo](https://assadullahhassan.github.io/pollyglot)
 
 [Project Screenshot/video](https://drive.google.com/drive/folders/1tiBi9kxQp6r38tOWmbUekHf4zXeqwCjt?usp=sharing)
 
